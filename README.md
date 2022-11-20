@@ -1,64 +1,36 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+##PfumaMuGaba
+The rise in popularity of Mukando in Zimbabwe strongly indicates that these savings clubs are quite effective for the majority of the group members. PfumaMuGaba is a secure “piggy bank” mobile application that enables group savings towards a particular similar agenda in which members can make their payments using card, Zimswitch, internal transfer or kiosk cash payments. All the added members automatically become signatories to the savings, anything towards the savings has to be acknowledged for by all members. The application can also be used for keeping track of payments made towards group savings and the dates when payment was initiated. It brings transparency on each member's payment.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+##Problem Definition
+● Mukando's biggest strength is also one of its greatest drawbacks, it relies on trust.
+● Sometimes people in mukando complain about a member, who after reaching their turn to receive a lump sum pull out of the club before the turns come to full rotation.
+● People claim they find it difficult to save on their own and need the pressure from other group members.
+● Formal businesses fear to create services targeted at Mukando because they seem to have no structure.
+● Each savings club has an objective and sets the rules for all the members.
+● There are no lengthy forms to be filled in or official documents.
+##Solution
+● In cases where the Mukando is more formalised with a bank account, the signatories have been trusted not to withdraw all the money and use it outside of the group’s agreement.
+● Savings clubs give you access to interest free capital at no extra cost to you.
+● Users can join multiple savings groups.
+● Users can pay towards savings at the comfort of their homes, using mobile app
+internal payment for both usd and zwl payments.
+● Securing funds is auto since all the funds go straight to the bank account.
+● There is a trace for all payments made.
+● The app uses gamification, which encourages users to pay towards their saving
+and earning badges which can be redeemed later on as gifts.
 
-## About Laravel
+##Types
+● Leisure - The members of leisure mukando save money for recreational
+purposes. Members receive payouts in predetermined sequences of rotation, and
+the funds are often put towards holidays.
+● Savings - Money is saved, and members receive their payouts on a rotational
+basis, often at monthly intervals.
+● Credit - The functions of credit mukando often overlap with those of the savings
+club. Funds which are accumulated can be borrowed by members or people who are associated with them. The loans are repaid with interest and profits are shared among members at the end of cycles.
+● Funeral - Funeral mukando function as burial societies and members accumulate funds to assist one another to finance the funerals of members of their families.
+● Purchasing - The purchasing mukando accumulate funds to buy items they need, whose cost cannot exceed the available funds. Members take turns to receive funds to purchase items which they could not otherwise afford.
+● Grocery - Grocery mukando are formed to accumulate funds to buy essential foods and groceries for the households of members. Groceries are purchased monthly or annually, depending upon the agreements upon which individual mukando are based, and purchases are shared equally among members.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+##Design Link
+https://www.figma.com/file/PPsahI03pTcM7G2tz83kIU/PfumaMuGaba?node-id=0 %3A1
+  

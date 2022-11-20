@@ -2,43 +2,44 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Invitation;
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\MukandoUser;
 class MukandoUsersController extends Controller
 {
-    //
-    public function create(Request $request,$user,$mukando)
+    public function index(Request $request)
     {
-        // $mukando_user = new Mukando;
-        // $mukando_user->user_id = $request->input('user_id');
-        // $mukando_user->mukando_id = $request->input('mukando_id');
-        // $mukando_user->save();
-        $input = $request->all();
-         $input['user_id'] =$user;
-         $input['mukando_id'] =$mukando;
-        MukandoUser::create($input);
+        $this->validate($request,[
+            'user_id'=>'required',
+        ]);
+        $groups=MukandoUser::where('user_id',$request->user_id)->get();
+        return response()->json(['groups' => $groups], 200);
     }
-    public function index()
+   
+    public function join($user_id, $mukando_id)
     {
-        $groups=MukandoUser::all()->where('user_id',1);
-        return view('users.index',compact('groups'));
+         $mukando_user = new MukandoUser();
+         $mukando_user->user_id = $user_id;
+         $mukando_user->mukando_id = $mukando_id;
+         $mukando_user->save();
+       return response()->json(['success' => 'Successfully joined'], 200);
     }
-    public function join()
+    public function attemptjoin(Request $request)
     {
-        
-        return view('users.join');
-    }
-    public function save(Request $request)
-    {
-        // $mukando_user = new Mukando;
-        // $mukando_user->user_id = $request->input('user_id');
-        // $mukando_user->mukando_id = $request->input('mukando_id');
-        // $mukando_user->save();
-        $user = new MukandoUser;
-         $user->mukando_id=$request->input('mukando_id');
-         $user->user_id=$request->input('user_id');
-        $user->save();
-        return redirect()->back()
-        ->with('success', 'mukando joined  ');
+        $this->validate($request,[
+            'email'=>'required',
+            'mukando_id'=>'required',
+        ]);
+       /* $user = new Invitation();
+         $user->mukando_id=$request->mukando_id;
+         $user->user_id=$request->user_id;
+         $user->mukando_id = $request->mukando_id;
+         $user->status = 'pending';
+         $user->message = $request->messagge;
+        $user->save();*/
+        $user = User::where('email', $request->email)->first();
+        $this->join($user->id, $request->mukando_id);
+        return response()->json(['success' => 'User has been successfully added '], 200);
     }
 }
